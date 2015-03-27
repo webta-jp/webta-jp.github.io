@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <%= partial 'partials/head' %>
+  <body>
+    <div id="sb-site">
+      <%= yield %>
+      <%= partial 'partials/footer' %>
+    </div>
+    <div class="sb-slidebar sb-right sb-style-overlay">
+      <%= partial 'partials/slidebars' %>
+    </div>
+    <%= partial 'partials/script' %>
+  </body>
+</html>

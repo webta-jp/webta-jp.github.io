@@ -1,0 +1,20 @@
+<% wrap_layout :layout do %>
+  <%= partial 'partials/header' %>
+  <main class='container main-container' role='main'>
+    <ul class="list-inline">
+      <%= partial 'partials/nav' %>
+    </ul>
+    <section>
+      <div class="row">
+        <section class='col-sm-8'>
+          <%= yield %>
+        </section>
+        <aside class='col-sm-4'>
+          <%= partial 'partials/top/search' %>
+          <hr />
+          <%= partial 'partials/social/twitter' %>
+        </aside>
+      </div>
+    </section>
+  </main>
+<% end %>

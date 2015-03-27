@@ -1,0 +1,43 @@
+/*
+ *= require_self 
+ *= require highlight
+ *= require top
+ *= require slidebars/distribution/0.10.2/slidebars.css
+ *= require slidebars
+ *= require article
+ */
+
+@charset "utf-8";
+
+@import "variables";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootswatch/simplex/bootswatch";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/footer";
+
+//
+// base
+//
+body {
+  font-family: Oxygen, 'Open Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+}
+
+
+//
+// main
+//
+.main-container {
+  padding-top: 70px;
+}
+
+header#header {
+  background-image: image-url('bg.jpg');
+  //background-color: rgba($navbar-default-bg, $opacity);
+  border: none;
+}

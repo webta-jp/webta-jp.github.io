@@ -1,0 +1,10 @@
+<% wrap_layout :layout do %>
+  <section>
+    <%= partial 'partials/post/header' %>
+    <article class='post'>  
+      <%= yield %>
+    </article>
+    
+    <%= partial 'partials/script/zenback' %>
+  </section>
+<% end %>

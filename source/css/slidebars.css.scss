@@ -1,0 +1,137 @@
+@import 'variables';
+/* ---------------
+ * Slidebars Theme
+ *
+ * ---------
+ * CSS Index
+ *
+ * 003 - Slidebars
+ * 004 - Slidebar Menus
+ * 005 - Slidebar Widgets
+ *
+ */
+// Original
+#sb-site {
+  
+}
+
+// For modal confirm
+#sb-site {
+  position: static;
+  z-index: auto;
+}
+
+/* Left */
+.sb-menu li .sb-open-right, .sb-menu li small {
+  display: inline-block;
+  padding: 14px;
+}
+.sb-menu li img {
+  margin: 14px;
+}
+
+/* ---------------
+ * 003 - Slidebars
+ */
+
+.sb-slidebar {
+  margin-top: 50px;
+  margin-right: 0px;
+  font-size: 14px;
+  color: #fff; /* Text colour. */
+  background-color: rgba($slidebars-color, $slidebars-opacity);
+  box-shadow: -2px 0px 3px 0px rgba(0,0,0,0.4);
+}
+
+/* --------------------
+ * 004 - Slidebar Menus
+ */
+
+/* Main Menu */
+.sb-menu { /* Apply to <ul> or <ol>. */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sb-menu li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background colour you set. */
+}
+
+.sb-menu > li:first-child {
+  border-top: none; /* Removes top border from first list item.. */
+}
+
+.sb-menu > li:last-child {
+  border-bottom: none; /* Removed bottom border from last list item. */
+}
+
+.sb-menu li a {
+  color: $slidebars-text-color;
+  width: 100%; /* Makes links full width. */
+  display: inline-block;
+  padding: 1em; /* Creates an even padding the same size as your font. */
+  font-weight: bold;
+  i {
+    color: lighten($slidebars-text-color, 20%);
+  }
+}
+
+.sb-menu li a:hover {
+  text-decoration: none;
+  color: $slidebars-text-color;
+  background-color: darken(rgba($slidebars-color, $slidebars-opacity), 20%);
+}
+
+/* Borders */
+.sb-right .sb-menu li a {
+  border-left: 3px solid transparent;
+}
+
+.sb-right .sb-menu li a:hover {
+  border-left: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+
+/* Submenus */
+.sb-submenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.05); /* Submenu background colour. */
+}
+
+.sb-submenu li a {
+  width: 100%; /* Makes links full width. */
+  display: inline-block;
+  padding: 1em; /* Creates an even padding the same size as your font. */
+  padding-left: 40px;
+}
+
+.sb-submenu li a:hover {
+  text-decoration: none;
+  background-color: darken(rgba($slidebars-color, $slidebars-opacity), 20%);
+}
+
+/* Caret */
+span.sb-caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  margin: 0 5px;
+  border: 5px solid transparent;
+}
+
+span.sb-caret { /* Caret Down */
+  border-top: 5px solid;
+  border-bottom: 0px solid transparent;
+}
+
+.sb-submenu-active > span.sb-caret { /* Caret Up */
+  border-top: 0px solid transparent;
+  border-bottom: 5px solid;
+}

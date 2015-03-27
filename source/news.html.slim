@@ -1,0 +1,24 @@
+---
+pageable: true
+per_page: 10
+---
+
+- page_articles.each_with_index do |article, i|  
+  h4= link_to article.title, article
+  h4
+    - article.tags.each do |tag|
+      = content_tag :span, tag, class: 'label label-success'
+  h5.text-right= article.date.strftime('%Y年%m月%e日')
+  
+aside
+  .page-number
+    hr/
+    Page #{page_number} of #{num_pages}
+  .half-column
+    - if paginate && num_pages > 1
+      - if prev_page
+        p= link_to '前のページ', prev_page
+  .half-column
+    - if paginate
+      - if next_page
+        p= link_to '次のページ', next_page

@@ -1,0 +1,11 @@
+{
+  "name": "kntmrkm.middleman",
+  "version": "0.0.1",
+  "dependencies": {
+    "echojs": "latest",
+    "slidebars": "latest",
+    "scroll-up-bar": "latest"
+  },
+  "devDependencies": {},
+  "exportsOverride": {}
+}
