@@ -97,12 +97,12 @@ after_configuration do
   sprockets.append_path "#{root}/components/"
 end
 
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
-set :fonts_dir, 'font'
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+set :fonts_dir, 'fonts'
 set :relative_links, true
-set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
+set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
     :fenced_code_blocks => true, :with_toc_data => true, :smartypants => true,
