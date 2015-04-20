@@ -1,0 +1,1 @@
+init_slidebars=function(){$.slidebars({siteClose:!0})};
