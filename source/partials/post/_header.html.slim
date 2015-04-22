@@ -1,11 +1,11 @@
-%h3
+h3
   = current_article.title
-%h5
+h5
   - current_article.tags.each do |tag|
     = content_tag :span, tag, class: 'label label-success'
-%h6.text-right
+h6.text-right
   = content_tag :span, '公開日', class: 'label label-default'
   = current_article.date.strftime('%Y年%m月%e日')
-%h6.text-right
+h6.text-right
   = content_tag :span, '更新日', class: 'label label-default'
   = File.mtime(current_page.source_file).strftime('%Y年%m月%e日')

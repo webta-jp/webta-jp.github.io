@@ -10,6 +10,7 @@ gem "middleman-livereload"
 gem "middleman-imageoptim"
 gem "middleman-syntax"
 gem "middleman-disqus"
+#gem "middleman-compass"
 #gem "middleman-autoprefixer"
 
 gem "nokogiri"

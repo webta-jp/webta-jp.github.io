@@ -1,0 +1,15 @@
+//
+// top
+//
+.top-header {
+  background-image: image-url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  //height: 600px;
+  padding-bottom: 50px;
+}
+#top-header-title {
+  color: #fff;
+  font-size: 55px;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, .4);
+}

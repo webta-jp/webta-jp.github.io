@@ -1,0 +1,18 @@
+/*
+ *= require custom
+ *= require highlight
+ *= require slidebars/distribution/0.10.2/slidebars.css
+ *= require slidebars
+ *= require top
+ *= require article
+ *= require_self 
+ */
+
+.clear {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+img.icon {
+  margin-right: 10px;
+}
