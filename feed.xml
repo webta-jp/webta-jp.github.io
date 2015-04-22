@@ -5,20 +5,7 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-10-28T17:14:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
-  <entry>
-    <title>ホームページ開設中です</title>
-    <link rel="alternate" href="http://blog.url.com/posts/2014/10/28/website-launch.html"/>
-    <id>http://blog.url.com/posts/2014/10/28/website-launch.html</id>
-    <published>2014-10-28T17:14:00+09:00</published>
-    <updated>2014-10-28T17:15:15+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;h1 id="ホームページを解説中です"&gt;ホームページを解説中です&lt;/h1&gt;
-</content>
-  </entry>
 </feed>
