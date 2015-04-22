@@ -5,7 +5,36 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-04-22T21:38:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>test</title>
+    <link rel="alternate" href="http://blog.url.com/posts/2015/04/22/test.html"/>
+    <id>http://blog.url.com/posts/2015/04/22/test.html</id>
+    <published>2015-04-22T21:38:00+09:00</published>
+    <updated>2015-04-22T21:40:38+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;テスト&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>ホームページ開設のお知らせ</title>
+    <link rel="alternate" href="http://blog.url.com/posts/2015/04/22/website-launch.html"/>
+    <id>http://blog.url.com/posts/2015/04/22/website-launch.html</id>
+    <published>2015-04-22T21:00:00+09:00</published>
+    <updated>2015-04-22T21:48:10+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h3 id="ホームページを公開しました。"&gt;ホームページを公開しました。&lt;/h3&gt;
+
+&lt;p&gt;今後は&lt;a href="http://reserven.jp"&gt;予約システムリザーブン&lt;/a&gt;の運営を中心に活動して参ります。&lt;/p&gt;
+
+&lt;p&gt;よろしくお願いいたします。&lt;/p&gt;
+</content>
+  </entry>
 </feed>
