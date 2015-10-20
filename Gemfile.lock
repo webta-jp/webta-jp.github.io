@@ -197,7 +197,7 @@ DEPENDENCIES
   bootstrap-sass
   builder
   font-awesome-sass
-  middleman
+  middleman (~> 3.4.0)
   middleman-blog
   middleman-deploy
   middleman-disqus

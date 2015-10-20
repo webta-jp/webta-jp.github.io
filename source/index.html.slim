@@ -14,7 +14,8 @@ header.top-header
         hr  
         
       .col-sm-4
-        = image_tag 'meishi.png', alt: '村上健太', class: 'img-responsive'
+        = link_to 'https://www.wantedly.com/users/1445812', target: '_blank' do
+          = image_tag 'meishi.png', alt: '村上健太', class: 'img-responsive'
         hr
         .well
           h4.text-center.strong= '最新情報'
