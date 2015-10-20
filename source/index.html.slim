@@ -41,5 +41,12 @@ br
         strong ホームページも簡単に作れます    
       
     .col-sm-6.text-center
-
       = partial 'partials/social/facebook'
+  /hr
+  /= form_tag 'https://sinatra-contact-form.herokuapp.com/', method: 'post' do
+    = field_set_tag do
+      = label_tag '名前'
+      = text_field_tag :name, class: 'form-control'
+    .form-group
+    = submit_tag '送信', class: 'btn btn-default'
+

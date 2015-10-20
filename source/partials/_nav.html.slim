@@ -1,7 +1,7 @@
 nav.navbar.navbar-default.navbar-fixed-top.clear
   .container
     .navbar-header
-      button.navbar-toggle.navbar-icon(type='button')
+      button.navbar-toggle.collapsed.navbar-icon(type='button' data-toggle='collapse' data-target='#navbar-collapse')
         span.fa.fa-navicon
       = link_to '/', class: 'navbar-brand' do
         span= image_tag 'logo.png', height: '20', alt: 'webta logo', class: 'icon', id: 'nav-icon'  
@@ -9,4 +9,5 @@ nav.navbar.navbar-default.navbar-fixed-top.clear
     .collapse.navbar-collapse#navbar-collapse
       ul.nav.navbar-nav
         li= link_to 'ウェブタについて', '/about.html'
-        li= link_to 'お問合せ', 'https://webta.reserven.jp/users/inquiries/new'
+        li= link_to 'お問合せ', '/contact.html'
+        /li= link_to 'お問合せ', 'https://webta.reserven.jp/users/inquiries/new'
