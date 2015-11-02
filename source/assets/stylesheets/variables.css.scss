@@ -1,11 +1,14 @@
+$main-color: #031e28;
+
 //
 // bootstrap
 //
 $font-family-base: 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 
-//$navbar-default-bg: #89c3eb;
-//$navbar-inverse-color: #fff;
-//$navbar-inverse-link-color: #fff;
+$navbar-inverse-bg: $main-color; //#89c3eb;
+$navbar-inverse-color: #fff;
+$navbar-inverse-link-color: #fff;
+$navbar-inverse-brand-color: #fff;
 //$navbar-inverse-bg: #164a84;
 
 //$brand-primary: #44617b;
@@ -13,11 +16,7 @@ $font-family-base: 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic ProN
 //$brand-info: #007bbb;
 
 $line-height-base: 1.6;
-
-
 @import 'bootstrap/variables';
-
-
 
 //
 // original

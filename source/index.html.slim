@@ -1,48 +1,52 @@
 header.top-header
   = partial 'partials/nav'
+  
   .container.main-container
-    .row
-      .col-sm-8
-        h1.text-center#top-header-title
-          strong= 'ウェブタ'
-        h2.text-center
-          strong= '個人事業主のためのITサポート'
-        h3.text-center
-          = 'ホームページ作成・受託開発・常駐契約'  
+    h1.text-center#top-header-title
+      strong= 'ウェブタ'
+    h2.text-center
+      strong= '個人事業主のためのITサポート'
+    h3.text-center
+      = 'ホームページ作成・受託開発・常駐契約'  
+    h5.text-center
+      = 'インターネット活用など各種相談承ります'
+    
+main.container.main-container
+  .row
+    .col-sm-12
+      .well.well-sm.text-center
+        h4.h4
+          strong= '運営サービス'
+        ul.list-inline
+          li
+            h3.h3.text-center
+              strong 無料ネット予約システム
+          li
+            h4.h2.text-center
+              = link_to '//reserven.jp/', class: 'btn btn-default btn-lg', target: '_blank' do
+                = image_tag 'reserven_logo.png', height: '30', width: '30', alt: 'reserven logo', class: 'icon'
+                strong リザーブン RESERVEN
         h5.text-center
-          = 'インターネット活用など各種相談承ります'
-        hr  
-        
-      .col-sm-4
-        = link_to 'https://www.wantedly.com/users/1445812', target: '_blank' do
-          = image_tag 'meishi.png', alt: '村上健太', class: 'img-responsive'
-        hr
-        .well
-          h4.text-center.strong= '最新情報'
-          ul.list-unstyled
-            - blog.articles[0...5].each do |article|
-              li
-                ul.list-inline
-                  li
-                    small= article.date.strftime('%y年%m月%e日')
-                  li= link_to article.title, article  
-br
-.container
+          strong ホームページも簡単に作れます    
+      
   .row
     .col-sm-6
-      .h3
-        = '運営サービス'
-      h3.h4.text-center
-        strong クラウド無料予約システム
-      h3.h5.text-center
-        = link_to '//reserven.jp/', class: 'btn btn-default btn-lg', target: '_blank' do
-          = image_tag 'reserven_logo.png', height: '30', width: '30', alt: 'reserven logo', class: 'icon'
-          | Reserven リザーブン
-      h5.text-center
-        strong ホームページも簡単に作れます    
+      .well.well-sm
+        = link_to 'https://www.wantedly.com/users/1445812', target: '_blank' do
+          = image_tag 'meishi.png', alt: '村上健太', class: 'img-responsive'
+        h4.text-center.strong= '最新情報'
+        ul.list-unstyled
+          - blog.articles[0...5].each do |article|
+            li
+              ul.list-inline
+                li
+                  small= article.date.strftime('%y年%m月%e日')
+                li= link_to article.title, article  
+    .col-sm-6
+      .well.well-sm.text-center
+        #blog-rss-feeds
+  
       
-    .col-sm-6.text-center
-      = partial 'partials/social/facebook'
   /hr
   /= form_tag 'https://sinatra-contact-form.herokuapp.com/', method: 'post' do
     = field_set_tag do

@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "dependencies": {
     "echojs": "latest",
+    "moment": "latest",
     "slidebars": "latest",
-    "scroll-up-bar": "latest"
+    "scroll-up-bar": "latest",
+    "jquery-rss": "latest"
   },
   "devDependencies": {},
   "exportsOverride": {}
