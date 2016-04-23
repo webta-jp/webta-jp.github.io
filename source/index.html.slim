@@ -30,7 +30,7 @@ main.container.main-container
           strong ホームページも簡単に作れます    
       
   .row
-    .col-sm-6
+    .col-sm-4
       .well.well-sm
         = link_to 'https://www.wantedly.com/users/1445812', target: '_blank' do
           = image_tag 'meishi.png', alt: '村上健太', class: 'img-responsive'
@@ -42,11 +42,13 @@ main.container.main-container
                 li
                   small= article.date.strftime('%y年%m月%e日')
                 li= link_to article.title, article  
-    .col-sm-6
+    .col-sm-8
       .well.well-sm.text-center
-        #blog-rss-feeds
+        /#blog-rss-feeds
+        = partial 'partials/script/rss'
   
-      
+    .col-sm-12
+
   /hr
   /= form_tag 'https://sinatra-contact-form.herokuapp.com/', method: 'post' do
     = field_set_tag do
